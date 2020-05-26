@@ -48,10 +48,20 @@ To verify:
 
 * connect to https://mattermost.ccs.ornl.gov
 
+- - - 
 
+### Setup [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
 
+First we set up a profile, and configure SOCKS5:
 
+<!-- ![](figs/switch2.png) -->
 
+Next, we setup rules for auto switch to work: whenever access to `*.ornl.gov` domain, we ask it to proxy through ORNL profile.
+
+<!-- ![](figs/switch1.png) -->
+
+- - - 
+ 
 ### ssh to vm local (created by vmfusion) takes a long time using hostname
 
 It is fine though if using IP address directly. There are various other fixes, particulary change server's 
