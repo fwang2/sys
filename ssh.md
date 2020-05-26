@@ -1,5 +1,12 @@
 # SSH 
 
+- [SSH](#ssh)
+  - [Multiple host jump](#multiple-host-jump)
+  - [HTTP Tunneling](#http-tunneling)
+  - [Setup Proxy SwitchyOmega](#setup-proxy-switchyomega)
+  - [ssh to vm local (created by vmfusion) takes a long time using hostname](#ssh-to-vm-local-created-by-vmfusion-takes-a-long-time-using-hostname)
+  - [References](#references)
+
 ## Multiple host jump 
 
 OpenSSH 7.3 above project `-J` option:
@@ -50,7 +57,7 @@ To verify:
 
 - - - 
 
-### Setup [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
+## Setup [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
 
 First we set up a profile, and configure SOCKS5:
 
@@ -62,7 +69,7 @@ Next, we setup rules for auto switch to work: whenever access to `*.ornl.gov` do
 
 - - - 
  
-### ssh to vm local (created by vmfusion) takes a long time using hostname
+## ssh to vm local (created by vmfusion) takes a long time using hostname
 
 It is fine though if using IP address directly. There are various other fixes, particulary change server's 
 `/etc/ssh/ssd_config` and set `GSSAPIAuthentication no`. That doesn't work in my case.
