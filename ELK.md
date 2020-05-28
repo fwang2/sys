@@ -6,6 +6,7 @@
     - [Check at the shard level](#check-at-the-shard-level)
     - [List all index(s)](#list-all-indexs)
     - [Show mapping of an index](#show-mapping-of-an-index)
+    - [Get stats of index (including size)](#get-stats-of-index-including-size)
     - [Refresh index](#refresh-index)
     - [Delete index](#delete-index)
     - [Document counts](#document-counts)
@@ -18,6 +19,7 @@
     - [HEAD for checking existence](#head-for-checking-existence)
     - [Delete single document](#delete-single-document)
     - [Delete index](#delete-index-1)
+- [Lucene Query](#lucene-query)
   
 ## Meta operations
 
@@ -55,6 +57,12 @@ GET /_cat/indices?pretty
 
 ```
 GET /summit_darshan/_mapping 
+```
+
+### Get stats of index (including size)
+
+```
+GET /summit_darshan_metrics/_stat
 ```
 
 ### Refresh index
