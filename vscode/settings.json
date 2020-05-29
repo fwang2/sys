@@ -59,7 +59,7 @@
   "editor.fontLigatures": false,
   "editor.lineHeight": 20,
   "editor.formatOnPaste": true,
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "window.zoomLevel": 0,
   "files.maxMemoryForLargeFilesMB": 8192,
   "explorer.confirmDragAndDrop": false,
@@ -102,4 +102,5 @@
   "go.testFlags": [
     "-v"
   ],
+  "editor.formatOnSave": true,
 }
