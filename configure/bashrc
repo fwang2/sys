@@ -303,7 +303,7 @@ alias gitadd='gitadd'
 #---------------------------------------------------------
 
 if [[ $HOSTNAME = rhea* ]]; then
-    module load darshan-util
+    module load darshan-util/3.2.1
     module list
     export GOPATH=$HOME/go_x86_64
     export PATH=$GOPATH/bin:$PATH
@@ -393,7 +393,7 @@ else
 fi
 
 alias debug-rhea1="salloc -A stf008  -N 1 -t 12:00:00"
-alias debug-rhea4="salloc -A stf008  -N 4 -t 12:00:00"
+alias debug-rhea4="salloc -A stf008  -N 4 -t 24:00:00"
 alias debug4="qsub -I -A stf008 -q debug -l nodes=4,walltime=60:00"
 alias debug1="qsub -I -A stf008 -q debug -l nodes=1,walltime=60:00"
 alias titan4="qsub -I -A stf008 -l nodes=4,walltime=60:00"
