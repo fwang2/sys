@@ -155,6 +155,18 @@ I have put in the following in the `.spack/modules.yaml` file:
 
 in for a shorter and more readable name.
 
+## On Summit
 
+step 1: check which arch Spack is using:
 
+    spack arch # linux-rhel7-power9le    
 
+step 2: make sure we use the correct module
+
+    module use /sw/exp9/spack/modules/linux-rhel7-power8le
+
+step 3: now we can load
+
+    module load pi
+
+that is it.
