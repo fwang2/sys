@@ -103,4 +103,5 @@
     "-v"
   ],
   "editor.formatOnSave": true,
+  "markdown.extension.preview.autoShowPreviewToSide": true,
 }

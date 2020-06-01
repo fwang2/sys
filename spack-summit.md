@@ -9,8 +9,10 @@
   - [Create packages that are not in spack repo](#create-packages-that-are-not-in-spack-repo)
   - [Leverage existing packages](#leverage-existing-packages)
   - [Make the Spack module loadable](#make-the-spack-module-loadable)
+  - [On Summit](#on-summit)
 
-The following note is more relevant to Summit for using `spack` to manage 3rd party packages.
+
+The following note is about using `spack` to manage 3rd party packages on OLCF's Summit computer; it is also applicable to vanilla cluster such as Rhea.
 
 ## Preparation
 
