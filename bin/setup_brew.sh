@@ -1,8 +1,7 @@
 #!/bin/bash
 
-brew update
-pkgs="ctags python gcc cmake corkscrew dos2unix git openmpi pkg-config python3 tmux wget \
-    valgrind enscript"
+pkgs="ctags cmake corkscrew pkg-config wget opensc \
+    valgrind enscript go"
 
 for p in $pkgs 
 do
