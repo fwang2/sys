@@ -197,7 +197,7 @@ alias git-list-authors='git log --all --pretty="format:%an <%aE>" | sort -u'
 alias docker-container-stop='docker container stop $(docker container ls -q)'
 alias docker-container-wipe='docker container rm $(docker container ls -q)'
 alias docker-image-wipe='docker image rm $(docker image ls -q) -f'
-alias docker-shell='docker exec -it test bash"
+alias docker-shell="docker exec -it test bash"
 alias mp="multipass"
 
 
