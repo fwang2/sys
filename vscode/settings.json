@@ -88,8 +88,6 @@
     "GOPATH": "${workspaceRoot}"
   },
   "sync.gist": "822c5dd94a75b8873c7f46b7a6d73436",
-  "sync.autoDownload": true,
-  "sync.autoUpload": true,
   "go.formatTool": "goimports",
   "go.lintFlags": [
     "-config ${workspaceFolder}/c.toml"
@@ -105,4 +103,7 @@
   "editor.formatOnSave": true,
   "markdown.extension.preview.autoShowPreviewToSide": true,
   "go.testEnvFile": "",
+  "sync.removeExtensions": false,
+  "sync.syncExtensions": false,
+  "sync.autoDownload": true,
 }
