@@ -92,6 +92,8 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+#DISABLE_MAGIC_FUNCTIONS=true
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -199,7 +201,18 @@ alias docker-container-wipe='docker container rm $(docker container ls -q)'
 alias docker-image-wipe='docker image rm $(docker image ls -q) -f'
 alias docker-shell="docker exec -it test bash"
 alias mp="multipass"
+alias dswatch='oc run ds-test -it --rm --generator=run-pod/v1 \
+    --restart=Never --image image-registry.openshift-image-registry.svc:5000/stf008data/dswatch:latest \
+   --overrides={"metadata":{"annotations":{"ccs.ornl.gov/fs":"olcf"}}} \
+   /bin/bash'
 
+# -------------------------------------------
+#            Python
+# -------------------------------------------
+
+alias python="python3"
+alias pip="pip3"
+alias ipython="ipython3"
 
 
 # %m hostname up to the first dot

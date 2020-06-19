@@ -10,6 +10,7 @@
   - [Leverage existing packages](#leverage-existing-packages)
   - [Make the Spack module loadable](#make-the-spack-module-loadable)
   - [On Summit](#on-summit)
+  - [Update package](#update-package)
 
 
 The following note is about using `spack` to manage 3rd party packages on OLCF's Summit computer; it is also applicable to vanilla cluster such as Rhea.
@@ -172,3 +173,15 @@ step 3: now we can load
     module load pi
 
 that is it.
+
+## Update package
+
+* create a release on github; copy the link to tar ball.
+* create a `sha256sum` on the tar.gz (there should be a better way of automating this)
+* run `spack/bin/spack edit pi` and replace or append new version and its checksum
+* run `spack/bin/spack install pi` to install new version
+  
+This will install the new version, but not deleting the old version.
+
+
+

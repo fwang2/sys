@@ -1,7 +1,10 @@
 #!/bin/bash
 
-pkgs="ctags cmake corkscrew pkg-config wget opensc \
-    valgrind enscript go"
+pkgs="ctags cmake corkscrew pkg-config wget 
+	opensc \
+	openshift-cli \
+	helm \
+    	valgrind enscript go"
 
 for p in $pkgs 
 do
