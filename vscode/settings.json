@@ -27,11 +27,10 @@
   "C_Cpp.default.cppStandard": "c++11",
   "C_Cpp.default.cStandard": "c11",
   "code-runner.executorMap": {
-      "cpp": "g++ $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
-      "python": "python3"
-   },
+    "cpp": "g++ $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+    "python": "python3"
+  },
   "code-runner.clearPreviousOutput": true,
-
   "[latex]": {
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 78,
@@ -41,12 +40,10 @@
       "strings": false
     }
   },
-
   "[bibtex]": {
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 78
   },
-
   "breadcrumbs.enabled": true,
   "editor.formatOnType": true,
   "[markdown]": {
@@ -55,7 +52,7 @@
     "editor.renderWhitespace": "all",
     "editor.acceptSuggestionOnEnter": "off"
   },
-  "editor.fontFamily": "Fira Code, Bitstream Vera Sans Mono, Consolas, Hack, Menlo",
+  "editor.fontFamily": "Fira Mono, Bitstream Vera Sans Mono, Consolas, Hack, Menlo",
   "editor.fontLigatures": false,
   "editor.lineHeight": 20,
   "editor.formatOnPaste": true,
@@ -65,7 +62,7 @@
   "explorer.confirmDragAndDrop": false,
   "workbench.colorTheme": "Blackboard",
   "[python]": {
-    "editor.formatOnPaste": false  
+    "editor.formatOnPaste": false
   },
   "python.pythonPath": "/opt/anaconda3/bin/python",
   "python.formatting.provider": "yapf",
@@ -83,14 +80,13 @@
   "terminal.integrated.inheritEnv": false,
   "git.ignoreLegacyWarning": true,
   "terminal.integrated.shell.osx": "/bin/zsh",
-  
   "terminal.integrated.env.osx": {
     "GOPATH": "${workspaceRoot}"
   },
   "sync.gist": "822c5dd94a75b8873c7f46b7a6d73436",
   "go.formatTool": "goimports",
   "go.lintFlags": [
-    "-config ${workspaceFolder}/c.toml"
+    "-config=${workspaceFolder}/config.toml"
   ],
   "go.lintTool": "revive",
   "go.UseLanguageServer": true,
@@ -106,4 +102,12 @@
   "sync.removeExtensions": false,
   "sync.syncExtensions": false,
   "sync.autoDownload": true,
+  "python.languageServer": "Microsoft",
+  "go.addTags": {},
+  "[go]": {
+    "editor.formatOnSave": true,
+  },
+  "files.associations": {
+    "*.go": "go"
+  }
 }
