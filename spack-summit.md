@@ -160,13 +160,13 @@ in for a shorter and more readable name.
 
 ## On Summit
 
-step 1: check which arch Spack is using:
+step 0: On summit, the correct arch is, linux-rhel7-power9le. This can be checked by `spack arch`. gcc 4.8.5 can only do power8, for power9 optimization, we need gcc 6.4.0 (default), and we can speicify this compiler on command line by:
 
-    spack arch # linux-rhel7-power9le    
+    spack install pi %gcc@6.4.0
 
 step 2: make sure we use the correct module
 
-    module use /sw/exp9/spack/modules/linux-rhel7-power8le
+    module use /sw/exp9/spack/modules/linux-rhel7-power9l
 
 step 3: now we can load
 
