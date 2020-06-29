@@ -166,7 +166,7 @@ step 0: On summit, the correct arch is, linux-rhel7-power9le. This can be checke
 
 step 2: make sure we use the correct module
 
-    module use /sw/exp9/spack/modules/linux-rhel7-power9l
+    module use /sw/exp9/spack/modules/linux-rhel7-power9le
 
 step 3: now we can load
 
