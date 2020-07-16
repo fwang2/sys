@@ -64,6 +64,9 @@
   "[python]": {
     "editor.formatOnPaste": false
   },
+  "[latex]": {
+    "editor.formatOnSave": false
+  },
   "python.pythonPath": "/opt/anaconda3/bin/python",
   "python.formatting.provider": "yapf",
   "python.jediEnabled": false,
@@ -109,5 +112,45 @@
   },
   "files.associations": {
     "*.go": "go"
-  }
+  },
+  "latex-workshop.latex.autoBuild.interval": 3000,
+  "rewrap.reformat": true,
+  "rewrap.autoWrap.enabled": true,
+  "rewrap.doubleSentenceSpacing": true,
+  "rewrap.wrappingColumn": 78,
+  "latex-workshop.latex.autoClean.run": "onBuilt",
+  // Define which recipe is used by `latex-workshop.build`. It also applies to auto build. Recipes are refered to by their names as defined in `latex-workshop.latex.recipes`. Note there are two particular values: 
+  // - `first` means to use the first recipe in `latex-workshop.latex.recipes`;
+  // - `lastUsed` means to use the last run recipe.
+  "latex-workshop.latex.recipe.default": "lastUsed"
+  // "latex-workshop.latex.recipes": [
+  //   {
+  //     "name": "lualatex->biber->lualatex",
+  //     "tools": [
+  //       "lualatex",
+  //       "biber",
+  //       "lualatex"
+  //     ]
+  //   }
+  // ],
+  // "latex-workshop.latex.tools": [
+  //   {
+  //     "name": "lualatex",
+  //     "command": "lualatex",
+  //     "args": [
+  //       "-synctex=1",
+  //       "-interaction=nonstopmode",
+  //       "-file-line-error",
+  //       "-pdf",
+  //       "%DOC%"
+  //     ]
+  //   },
+  //   {
+  //     "name": "biber",
+  //     "command": "biber",
+  //     "args": [
+  //       "%DOCFILE%"
+  //     ]
+  //   }
+  // ]
 }
