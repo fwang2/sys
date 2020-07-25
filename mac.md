@@ -1,6 +1,30 @@
 # Mac OS System Notes
 
+- [Mac OS System Notes](#mac-os-system-notes)
+  - [Terminal recording](#terminal-recording)
+  - [SF Font](#sf-font)
+  - [Check which process prevent sleeping?](#check-which-process-prevent-sleeping)
+  - [Format Disks](#format-disks)
+  - [Install Xcode Toolchain](#install-xcode-toolchain)
+  - [Fix blurred fonts after upgrading to Mojave](#fix-blurred-fonts-after-upgrading-to-mojave)
+  - [Setup Shared Time Machine](#setup-shared-time-machine)
+  - [My Current Backup List](#my-current-backup-list)
 
+## Terminal recording
+
+This is done by a combination of tools:
+
+* [ttygif](https://github.com/icholy/ttygif) (brew install)
+* Smart GIF Maker, Mac AppStore.
+
+Steps:
+1. start terminal
+2. `ttyrec demo`
+3. now recording session starts
+4. quit by `CTRL+D`
+5. `ttygif demo -f`, this step will generate the gif file
+6. Use Smart GIF Maker to cut and edit as need. The app is very slow though.
+   There is also online tools available for this task.
 
 ## SF Font
 
