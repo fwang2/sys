@@ -126,7 +126,8 @@
   "printcode.disableTelemetry": true,
   "printcode.fontSize": 10,
   "printcode.paperSize": "letter",
-  "printcode.tabSize": 4
+  "printcode.tabSize": 4,
+  "editor.formatOnSaveMode": "modifications"
   // "latex-workshop.latex.recipes": [
   //   {
   //     "name": "lualatex->biber->lualatex",
