@@ -1,6 +1,16 @@
 # Conda
 
 
+## set up machine learning environment
+
+    conda create -n deep
+    conda install jupyterlab
+    conda install scikit-learn
+    conda install matplotlib
+
+
+## enable nb extension
+
 
 ## disable base prompt
 

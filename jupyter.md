@@ -1,6 +1,10 @@
 
 # Jupyter Notebook
 
+To set it up with jupyterlab extension, see the following link:
+https://jupyterlab.readthedocs.io/en/stable/user/extensions.html
+
+
 ## Useful extensions
 
 * Font extension: https://github.com/deathbeds/jupyterlab-fonts
