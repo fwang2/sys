@@ -52,7 +52,7 @@
     "editor.renderWhitespace": "all",
     "editor.acceptSuggestionOnEnter": "off"
   },
-  "editor.fontFamily": "Fira Mono, Bitstream Vera Sans Mono, Consolas, Hack, Menlo",
+  "editor.fontFamily": "Fira Code, Bitstream Vera Sans Mono, Consolas, Hack, Menlo",
   "editor.fontLigatures": false,
   "editor.lineHeight": 20,
   "editor.formatOnPaste": true,
@@ -67,7 +67,6 @@
   "[latex]": {
     "editor.formatOnSave": false
   },
-  "python.pythonPath": "/opt/anaconda3/bin/python",
   "python.formatting.provider": "yapf",
   "python.jediEnabled": false,
   "latex-workshop.latex.clean.subfolder.enabled": true,
@@ -127,7 +126,8 @@
   "printcode.fontSize": 10,
   "printcode.paperSize": "letter",
   "printcode.tabSize": 4,
-  "editor.formatOnSaveMode": "modifications"
+  "editor.formatOnSaveMode": "modifications",
+  "jupyter.alwaysTrustNotebooks": true
   // "latex-workshop.latex.recipes": [
   //   {
   //     "name": "lualatex->biber->lualatex",

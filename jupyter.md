@@ -34,10 +34,15 @@ the liking:
     // JSS-compatible JSON applied to the Global scope
     "styles": {
         ":root": {
-            "--jp-code-font-family": "Fira Mono",
+            "--jp-code-font-family": "Fira Code",
             "--jp-content-font-size1": "15px",
             "--jp-code-font-size": "13px"
         }
     }
 }
 ```
+
+Note that you can also use "Fira Mono" if that is what is installed.
+
+## Jupyter and Conda
+
