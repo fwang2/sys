@@ -141,11 +141,11 @@ alias aicip="ssh f7b@aicip.eecs.utk.edu"
 alias panda="ssh f7b@panda.eecs.utk.edu"
 alias login1="ssh f7b@login1.ornl.gov"
 alias ccshome="ssh -I /usr/local/lib/opensc-pkcs11.so fwang2@home.ccs.ornl.gov"
-alias hub="ssh -X -I /usr/local/lib/opensc-pkcs11.so fwang2@hub.ccs.ornl.gov"
+alias hub="ssh -I /usr/local/lib/opensc-pkcs11.so fwang2@hub.ccs.ornl.gov"
 alias hubsftp="sftp -o "SmartcardDevice=/usr/local/lib/opensc-pkcs11.so" fwang2@hub.ccs.ornl.gov"
 alias testbed-mgmt1="ssh fwang2@testbed-mgmt1"
 alias pike-mgmt1="ssh fwang2@pike-mgmt1"
-alias rhea="ssh -X -I /usr/local/lib/opensc-pkcs11.so fwang2@rhea.ccs.ornl.gov"
+alias andes="ssh -I /usr/local/lib/opensc-pkcs11.so fwang2@andes.olcf.ornl.gov"
 
 # -C compress data
 # -f request ssh to go to background

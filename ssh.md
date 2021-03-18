@@ -4,6 +4,9 @@
   - [Multiple host jump](#multiple-host-jump)
   - [HTTP Tunneling](#http-tunneling)
   - [Setup Proxy SwitchyOmega](#setup-proxy-switchyomega)
+    - [Tunneling setup](#tunneling-setup)
+    - [Configure SOCK5 in browser](#configure-sock5-in-browser)
+    - [Auto switch rules](#auto-switch-rules)
   - [ssh to vm local (created by vmfusion) takes a long time using hostname](#ssh-to-vm-local-created-by-vmfusion-takes-a-long-time-using-hostname)
   - [References](#references)
 
@@ -55,13 +58,25 @@ To verify:
 
 ## Setup [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif)
 
-First we set up a profile, and configure SOCKS5:
 
-<!-- ![](figs/switch2.png) -->
+### Tunneling setup
+
+To simplify this step, use alias
+
+```
+ssh -C -f -N -D 9090 pie
+```
+
+### Configure SOCK5 in browser
+
+![](figs/switch1.png)
+
+
+### Auto switch rules
 
 Next, we setup rules for auto switch to work: whenever access to `*.ornl.gov` domain, we ask it to proxy through ORNL profile.
 
-<!-- ![](figs/switch1.png) -->
+![](figs/switch2.png)
 
 - - - 
  
