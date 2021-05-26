@@ -1,3 +1,12 @@
+# Mac OS Install
+
+* Download a copy of install image
+* Use [Ether](https://www.balena.io/etcher/) to burn it to a USB
+* Plug in USB, restart Mac while holding Option key, make sure you keep pressing down
+* When presented with options, choose USB installer
+* Use Disk Util to erase the Mac
+* And install the new system.
+
 # Mac OS System Notes
 
 - [Mac OS System Notes](#mac-os-system-notes)
