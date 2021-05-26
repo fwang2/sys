@@ -11,6 +11,8 @@
 
 * Power up Mac, while holding Command+R, release when seeing Apple logo.
 * This will take you to Recovery, where Restore from Time Machine is an option.
+* USB disk: Power.backup
+
 
 # Mac OS System Notes
 
