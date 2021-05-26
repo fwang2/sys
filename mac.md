@@ -7,6 +7,11 @@
 * Use Disk Util to erase the Mac
 * And install the new system.
 
+# Mac OS Restore (from Time Machine)
+
+* Power up Mac, while holding Command+R, release when seeing Apple logo.
+* This will take you to Recovery, where Restore from Time Machine is an option.
+
 # Mac OS System Notes
 
 - [Mac OS System Notes](#mac-os-system-notes)
