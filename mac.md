@@ -1,3 +1,19 @@
+# Mac OS Install
+
+* Download a copy of install image
+* Use [Ether](https://www.balena.io/etcher/) to burn it to a USB
+* Plug in USB, restart Mac while holding Option key, make sure you keep pressing down
+* When presented with options, choose USB installer
+* Use Disk Util to erase the Mac
+* And install the new system.
+
+# Mac OS Restore (from Time Machine)
+
+* Power up Mac, while holding Command+R, release when seeing Apple logo.
+* This will take you to Recovery, where Restore from Time Machine is an option.
+* USB disk: Power.backup
+
+
 # Mac OS System Notes
 
 - [Mac OS System Notes](#mac-os-system-notes)

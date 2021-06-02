@@ -60,7 +60,11 @@
   "window.zoomLevel": 0,
   "files.maxMemoryForLargeFilesMB": 8192,
   "explorer.confirmDragAndDrop": false,
+<<<<<<< HEAD
   "workbench.colorTheme": "NetBeans Light Theme",
+=======
+  "workbench.colorTheme": "Visual Studio Light",
+>>>>>>> 9b3b41da54df297e3b13425756f2a2baed9ecdbc
   "[python]": {
     "editor.formatOnPaste": false
   },
@@ -103,7 +107,7 @@
   "go.testEnvFile": "",
   "sync.removeExtensions": false,
   "sync.autoDownload": true,
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Pylance",
   "go.addTags": {},
   "[go]": {
     "editor.formatOnSave": true,
@@ -133,9 +137,13 @@
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
+<<<<<<< HEAD
   ],
   "extensions.ignoreRecommendations": true,
   "jupyter.askForKernelRestart": false
+=======
+  ]
+>>>>>>> 9b3b41da54df297e3b13425756f2a2baed9ecdbc
   // "latex-workshop.latex.recipes": [
   //   {
   //     "name": "lualatex->biber->lualatex",
