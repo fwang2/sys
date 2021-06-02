@@ -126,11 +126,11 @@ alias rm='rm -i'
 
 # ORNL alias
 alias bsub1="bsub -W 24:00 -nnodes 1 -q storage -P STF006Accept -Is /bin/bash"
-alias summit="ssh -X -I /usr/local/lib/opensc-pkcs11.so fwang2@summit.olcf.ornl.gov"
+alias summit="ssh -I /usr/local/lib/opensc-pkcs11.so fwang2@summit.olcf.ornl.gov"
+alias andes="ssh -I /usr/local/lib/opensc-pkcs11.so fwang2@andes.olcf.ornl.gov"
 alias summitsftp='sftp -o SmartcardDevice=/usr/local/lib/opensc-pkcs11.so fwang2@summit.olcf.ornl.gov'
-alias peak="ssh -X peak.olcf.ornl.gov"
-alias summit="ssh -X -I /usr/local/lib/opensc-pkcs11.so fwang2@summit.olcf.ornl.gov"
-alias summitdev="ssh -X summitdev"
+alias peak="ssh peak.olcf.ornl.gov"
+alias summitdev="ssh summitdev"
 alias summit_load="module load gcc boost"
 alias summit_unload="module unload gcc boost"
 alias summit_debug1="bsub -P STF008 -nnodes 1 -W 60 -alloc_flags gpumps -Is $SHELL"
@@ -156,7 +156,7 @@ alias pie="ssh -C -f -N -D 9090 pie"
 # need to go into cave first
 alias lustre-mgmt1="ssh fwang2@lustre-mgmt1"
 alias sudo-mgmt="sudo /opt/eas/bin/eash"
-
+alias jet="ssh f7b@192.168.0.126"
 ##  TMUX
 
 alias tm="tmux attach || tmux new"
@@ -213,6 +213,12 @@ alias dswatch='oc run ds-test -it --rm --generator=run-pod/v1 \
 alias python="python3"
 alias pip="pip3"
 alias ipython="ipython3"
+
+# -------------------------------------------
+#            CADES
+# -------------------------------------------
+
+alias or-slurm="ssh f7b@or-slurm-login.ornl.gov"
 
 
 # %m hostname up to the first dot

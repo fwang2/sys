@@ -60,7 +60,7 @@
   "window.zoomLevel": 0,
   "files.maxMemoryForLargeFilesMB": 8192,
   "explorer.confirmDragAndDrop": false,
-  "workbench.colorTheme": "Blackboard",
+  "workbench.colorTheme": "NetBeans Light Theme",
   "[python]": {
     "editor.formatOnPaste": false
   },
@@ -127,7 +127,15 @@
   "printcode.paperSize": "letter",
   "printcode.tabSize": 4,
   "editor.formatOnSaveMode": "modifications",
-  "jupyter.alwaysTrustNotebooks": true
+  "jupyter.alwaysTrustNotebooks": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "extensions.ignoreRecommendations": true,
+  "jupyter.askForKernelRestart": false
   // "latex-workshop.latex.recipes": [
   //   {
   //     "name": "lualatex->biber->lualatex",
