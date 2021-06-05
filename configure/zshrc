@@ -258,5 +258,7 @@ alias pie2="ssh f7b@192.168.0.107"
 
 if [[ $HOSTNAME == "pie" ]]; then
     PATH=/opt/rocm/bin:/opt/rocm/opencl/bin:$PATH
+    source /opt/miniconda3/etc/profile.d/conda.sh
+    conda activate deep-p38
 fi
 
