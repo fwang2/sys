@@ -110,6 +110,7 @@ fi
 
 if [[ $HOSTNAME = *ande* || $HOSTNAME = star* ]]; then
     module use /sw/aaims/modules/linux-rhel8-zen2
+    module use /sw/aaims/andes/modulefiles
     #eval $(/ccs/home/fwang2/.linuxbrew/bin/brew shellenv)
 
 fi
@@ -121,8 +122,20 @@ fi
 
 
 if [[ $HOSTNAME = *summit* ]]; then
+    module use /sw/aaims/summit/modulefiles
     module use /sw/aaims/spack/modules/linux-rhel7-power9le
-    #eval $(/ccs/home/fwang2/.linuxbrew/bin/brew shellenv)
+    source /sw/aaims/summit/miniconda3/etc/profile.d/conda.sh
+fi
+
+###########################################################
+#                        Spock
+###########################################################
+
+
+if [[ $HOSTNAME = *spock* ]]; then
+    module use /sw/aaims/spock/modulefiles
+    module load miniconda3
+    conda activate /sw/aaims/spock/deep
 fi
 
 
