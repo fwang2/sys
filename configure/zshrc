@@ -239,10 +239,24 @@ $USER@%M $(conda_prompt_info) ${_current_dir} $(git_prompt_info)
 # change from default blue to yellow
 typeset +H _current_dir="%{$fg_bold[yellow]%}%3~%{$reset_color%} "
 
+# -------------------------------------------
+#            jetson
+# -------------------------------------------
+
+
 if [[ $HOSTNAME == "jetson" ]]; then
     source $HOME/miniconda3/etc/profile.d/conda.sh
     conda activate deep-p38
 fi
 
 
+# -------------------------------------------
+#            Linux Pie Workstation
+# -------------------------------------------
+
+alias pie2="ssh f7b@192.168.0.107"
+
+if [[ $HOSTNAME == "pie" ]]; then
+    PATH=/opt/rocm/bin:/opt/rocm/opencl/bin:$PATH
+fi
 
