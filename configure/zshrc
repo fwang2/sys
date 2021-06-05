@@ -251,7 +251,7 @@ fi
 
 
 # -------------------------------------------
-#            Linux Pie Workstation
+#            Linux pie workstation
 # -------------------------------------------
 
 alias pie2="ssh f7b@192.168.0.107"
@@ -262,3 +262,10 @@ if [[ $HOSTNAME == "pie" ]]; then
     conda activate deep-p38
 fi
 
+# -------------------------------------------
+#            PATH
+# -------------------------------------------
+
+if [[ -d $HOME/sys ]]; then
+   PATH=$HOME/sys/bin:$PATH
+fi
