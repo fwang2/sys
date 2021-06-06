@@ -256,6 +256,8 @@ fi
 # -------------------------------------------
 
 alias pie="ssh f7b@pie.local"
+alias wakeup_pie="wakeonlan e4:54:e8:63:a1:88"
+alias gosleep="sudo systemctl suspend"
 
 if [[ $HOSTNAME == "pie" ]]; then
     PATH=/opt/rocm/bin:/opt/rocm/opencl/bin:$PATH
