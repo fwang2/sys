@@ -154,7 +154,8 @@ alias andes="ssh -I /usr/local/lib/opensc-pkcs11.so fwang2@andes.olcf.ornl.gov"
 # -N don't execute remote command
 # -D create SOCKS5 server on port 9090
 # 
-alias pie="ssh -C -f -N -D 9090 pie"
+# pie is taken
+# alias pie="ssh -C -f -N -D 9090 pie"
 
 # need to go into cave first
 alias lustre-mgmt1="ssh fwang2@lustre-mgmt1"
@@ -254,7 +255,7 @@ fi
 #            Linux pie workstation
 # -------------------------------------------
 
-alias pie2="ssh f7b@192.168.0.107"
+alias pie="ssh f7b@pie.local"
 
 if [[ $HOSTNAME == "pie" ]]; then
     PATH=/opt/rocm/bin:/opt/rocm/opencl/bin:$PATH
