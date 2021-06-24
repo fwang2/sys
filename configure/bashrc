@@ -2,6 +2,7 @@
 # .bashrc by Feiyi Wang
 #
 
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
@@ -38,23 +39,20 @@ function parse_git_branch {
 #--------------------------------------------
 
 OS=`uname -s`
-#HOSTNAME=`hostname -f`  # full name
-HOSTNAME=`echo $HOSTNAME | cut -d"." -f1,2` # partial
+HOSTNAME=`hostname -f | cut -d"." -f1,2`
 
-
-##
 ## color working directory: 
 ##  \[\e[33;1m\]\w\[\e[0m\]
 
 if [ -f $HOME/sys/configure/git-prompt.sh ]; then
     source $HOME/sys/configure/git-prompt.sh
     if [ $(id -u) -eq 0 ]; then
-        PS1='\u@\h: \w$(__git_ps1 "[\[\e[0;32m\]%s\[\e[0m\]\[\e[0;33m\]$(parse_git_dirty)\[\e[0m\]]")\n\t # '
+        PS1='\u@$HOSTNAME: \w$(__git_ps1 "[\[\e[0;32m\]%s\[\e[0m\]\[\e[0;33m\]$(parse_git_dirty)\[\e[0m\]]")\n\t # '
     else
-        PS1='\[\e[0m\]\u@\h: \[\e[31;1m\]\w\[\e[0m\]$(__git_ps1 "[\[\e[0;32m\]%s\[\e[0m\]\[\e[0;33m\]$(parse_git_dirty)\[\e[0m\]]")\n\[\e[1m\]\t\[\e[0m\] $ '
+        PS1='\[\e[0m\]\u@$HOSTNAME: \[\e[31;1m\]\w\[\e[0m\]$(__git_ps1 "[\[\e[0;32m\]%s\[\e[0m\]\[\e[0;33m\]$(parse_git_dirty)\[\e[0m\]]")\n\[\e[1m\]\t\[\e[0m\] $ '
     fi
 else
-    PS1="\u@\h \w$ "
+    PS1="\u@\H \w$ "
 fi
 
 
